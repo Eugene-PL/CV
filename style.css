@@ -49,7 +49,7 @@ body {
   border-radius: 50%;
   display: inline-block; /* Чтобы рамка обтекала изображение */
   padding: 3%; /* Отступ внутри рамки */
-  margin-left: -12px;
+  margin-left: -10px;
   border-radius: 50%; /* Закругление углов для круглой рамки */
   background-color: #FFFFFF; /* Полупрозрачный фон для контраста */
   }
