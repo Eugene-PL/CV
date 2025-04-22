@@ -168,7 +168,7 @@ body {
   .links__link,
   .links__title {
     font-size: 14px;
-    padding: 0px 10% 10px;
+    padding: 0px 5% 5px;
     color: #483D8B; /* цвет шрифта слева в блоках описания */
     }
 
@@ -176,10 +176,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-left: -10%;
-    gap: 10%;
+    margin-left: 0%;
+    gap: 15%;
     border-bottom: 1px solid #dadada;
-    width: 100%;
+    width: 93%;
     }
     .links__link:last-child {
       border-bottom: none;
@@ -189,6 +189,12 @@ body {
       text-decoration: none;
       text-align: left;
       color: #161c2d; /* цвет шрифта справа в блоках описания */
+      transition: color 0.3s ease; /* Плавный переход цвета */
+      }
+    .links__link:hover {
+      color: #7B68EE; /* Цвет текста при наведении */
+      text-shadow: 0 0 1px #DEE7F3, /* Основное свечение */
+                   0 0 2px #DEE7F3; /* Дополнительное свечение */
       }
   .links__title {
     margin: 0;
@@ -205,10 +211,11 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
 .download-button:hover {
     background-color: #3A2A9E; /* Темнее при наведении */
+    box-shadow: 0 4px 20px rgba(222, 231, 243, 0.4);
     }
 .resume {
     text-align: center;
