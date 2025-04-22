@@ -22,14 +22,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #FFFFE0; /* Цвет фона прелоадера */
+    background-color: #483D8B; /* Цвет фона прелоадера */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999; /* Убедитесь, что прелоадер выше других элементов */
     }
 .loader {
-    border: 8px solid #F0E68C; /* Светлый цвет для фона */
+    border: 8px solid #FFFFE0; /* Светлый цвет для фона */
     border-top: 8px solid #3498db; /* Цвет для анимации */
     border-radius: 50%;
     width: 50px; /* Ширина прелоадера */
@@ -43,12 +43,10 @@ body {
 
 /*=============   Header   ==============*/
 .header {
-  margin: 30px;
+  margin-top: 30px;
   }
 .header__avatar {
-  border-radius: 50%;
-  display: inline-block; /* Чтобы рамка обтекала изображение */
-  padding: 3%; /* Отступ внутри рамки */
+  padding: 3px; /* Отступ внутри рамки */
   margin-left: -10px;
   border-radius: 50%; /* Закругление углов для круглой рамки */
   background-color: #FFFFFF; /* Полупрозрачный фон для контраста */
@@ -78,6 +76,7 @@ body {
   padding-top: 140px;
   width: 90%;
   padding-left: 5%;
+  max-width: 800px;
   }
   .about-me__header {
     font-family: "Helvetica Neue";
@@ -120,6 +119,8 @@ body {
     border: 2px solid #C2BEDE; /* сплошная рамка шириной 2 пикселя */
     }
   .stack__link {
+    width: 115%;
+    margin-left: -15%;
     display: flex;
     }
   .stack__name {
@@ -167,18 +168,18 @@ body {
   .links__link,
   .links__title {
     font-size: 14px;
-        text-align: center;
     padding: 0px 10% 10px;
     color: #483D8B; /* цвет шрифта слева в блоках описания */
     }
+
   .links__link {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px 5% 0px;
-    gap: 25%;
+    margin-left: -10%;
+    gap: 12%;
     border-bottom: 1px solid #dadada;
-    width: 90%;
+    width: 100%;
     }
     .links__link:last-child {
       border-bottom: none;
@@ -186,6 +187,7 @@ body {
     .links__link,
     .links__link:visited {
       text-decoration: none;
+      text-align: left;
       color: #161c2d; /* цвет шрифта справа в блоках описания */
       }
   .links__title {
