@@ -1,0 +1,212 @@
+body {
+  font-family: "Helvetica";
+  background-color: #CEE5FF;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('./background-image.jpg'); /* Путь к вашему изображению */
+  background-size: cover; /* Изображение будет покрывать весь фон */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Изображение не будет повторяться */
+  background-attachment: fixed; /* Фиксируем изображение при прокрутке */
+  }
+
+/*=============   Preloader   ==============*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFE0; /* Цвет фона прелоадера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Убедитесь, что прелоадер выше других элементов */
+    }
+.loader {
+    border: 8px solid #F0E68C; /* Светлый цвет для фона */
+    border-top: 8px solid #3498db; /* Цвет для анимации */
+    border-radius: 50%;
+    width: 50px; /* Ширина прелоадера */
+    height: 50px; /* Высота прелоадера */
+    animation: spin 0.5s linear infinite; /* Анимация вращения */
+    }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+
+/*=============   Header   ==============*/
+.header {
+  margin: 30px;
+  }
+.header__avatar {
+  border-radius: 50%;
+  display: inline-block; /* Чтобы рамка обтекала изображение */
+  padding: 3%; /* Отступ внутри рамки */
+  border-radius: 50%; /* Закругление углов для круглой рамки */
+  background-color: #FFFFFF; /* Полупрозрачный фон для контраста */
+  }
+
+.header__title {
+  color: #FFFFFF; /* шрифт приветствия */
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: "Helvetica Neue";
+  position: absolute; /* Фиксируем позицию */
+  top: calc(370px + 10px); /* Позиция заголовка ниже аватара */
+  text-shadow: 0 0 10px #483D8B, /* Основное свечение */
+                 0 0 20px #483D8B; /* Дополнительное свечение */
+  }
+  .header__subtitle {
+    color: #FFFFFF; /* шрифт под приветствием */
+    font-size: 16px;
+    line-height: 1.4;
+    position: absolute; /* Фиксируем позицию */
+    top: calc(370px + 70px); /* Позиция подзаголовка ниже заголовка */
+    text-shadow: 0 0 10px #483D8B, /* Основное свечение */
+                 0 0 20px #483D8B; /* Дополнительное свечение */
+    }
+/*=============   Div Container   ==============*/
+.about-me {
+  padding-top: 100px;
+  width: 90%;
+  padding-left: 5%;
+  }
+  .about-me__header {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #483D8B, /* Основное свечение */
+               0 0 20px #483D8B; /* Дополнительное свечение */
+    margin-bottom: 10px;
+    }
+  .about-me__container {
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.9); /* Устанавливает светло-желтый цвет фона для блока */
+    border-radius: 10px; /* Закругляет углы блока с радиусом 10 пикселей */
+    padding: 2px 14px 2px; /* Устанавливает внутренние отступы: сверху и снизу по 20 пикселей, справа и слева по 10 пикселей */
+    margin: 0; /* Убирает внешние отступы у элемента */
+    }
+
+.stack {
+  padding-top: 40px;
+  width: 90%;
+  padding-left: 5%;
+  }
+  .stack__header {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #483D8B, /* Основное свечение */
+               0 0 20px #483D8B; /* Дополнительное свечение */
+    margin-bottom: 10px;
+    }
+  .stack__container {
+    background-color: rgba(255, 255, 255, 0.9); /* Устанавливает светло-желтый цвет фона для блока */
+    border-radius: 10px; /* Закругляет углы блока с радиусом 10 пикселей */
+    padding: 14px 14px 14px; /* Устанавливает внутренние отступы: сверху и снизу по 20 пикселей, справа и слева по 10 пикселей */
+    margin: 2px; /* Убирает внешние отступы у элемента */
+    }
+  .stack__subcontainer {
+    border-radius: 14px; /* Закругляет углы блока с радиусом 10 пикселей */
+    margin: -2px; /* Убирает внешние отступы у элемента */
+    border: 2px solid #C2BEDE; /* сплошная рамка шириной 2 пикселя */
+    }
+  .stack__link {
+    display: flex;
+    }
+  .stack__name {
+    font-size: 14px;
+    color: #000000; /* цвет шрифта слева в блоках описания */
+    width: 50%;
+    text-align: center;
+    } 
+  .stack__title {
+    font-size: 14px;
+    color: #483D8B; /* цвет шрифта слева в блоках описания */
+    width: 50%;
+    text-align: left;
+    }  
+
+.links {
+  padding-top: 40px;
+  width: 90%;
+  padding-left: 5%;
+  }
+  .links__header {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #483D8B, /* Основное свечение */
+               0 0 20px #483D8B; /* Дополнительное свечение */
+    margin-bottom: 10px;
+    }
+  .links__container {
+    list-style-type: none; /* Убирает маркеры списка (если это элемент списка) */
+    background-color: rgba(255, 255, 255, 0.85); /* Устанавливает светло-желтый цвет фона для блока */
+    border-radius: 10px; /* Закругляет углы блока с радиусом 10 пикселей */
+    display: flex; /* Устанавливает блоку флекс-контейнер, позволяя использовать флекс-расположение для дочерних элементов */
+    flex-direction: column; /* Устанавливает направление флекса по вертикали (столбик) */
+    align-items: flex-start; /* Выравнивает дочерние элементы по началу контейнера (слева) */
+    padding: 20px 10% 10px; /* Устанавливает внутренние отступы: сверху и снизу по 20 пикселей, справа и слева по 10 пикселей */
+    gap: 10px; /* Устанавливает расстояние между дочерними элементами в контейнере на 10 пикселей */
+    flex: none; /* Отключает автоматическое изменение размера элемента в флекс-контейнере */
+    order: 1; /* Устанавливает порядок отображения элемента в флекс-контейнере (по умолчанию все элементы имеют порядок 0) */
+    flex-grow: 0; /* Запрещает элементу расти, занимая доступное пространство в контейнере */
+    box-sizing: border-box; /* Изменяет модель расчета размеров элемента так, чтобы padding и border включались в общую ширину и высоту элемента */
+    margin: 0; /* Убирает внешние отступы у элемента */
+    margin-bottom: 50px;
+    }
+  .links__link,
+  .links__title {
+    font-size: 14px;
+        text-align: center;
+    padding: 0px 10% 10px;
+    color: #483D8B; /* цвет шрифта слева в блоках описания */
+    }
+  .links__link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 5% 0px;
+    gap: 25%;
+    border-bottom: 1px solid #dadada;
+    width: 90%;
+    }
+    .links__link:last-child {
+      border-bottom: none;
+      }
+    .links__link,
+    .links__link:visited {
+      text-decoration: none;
+      color: #161c2d; /* цвет шрифта справа в блоках описания */
+      }
+  .links__title {
+    margin: 0;
+    min-width: 10%;
+    }
+
+/*=============   Footer   ==============*/
+    footer {
+  margin: 40px 0 80px 0;
+
+.download-button {
+    padding: 8px 80px;
+    background-color: #554A9E; /* Синий цвет */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    }
+.download-button:hover {
+    background-color: #3A2A9E; /* Темнее при наведении */
+    }
+.resume {
+    text-align: center;
+    }
