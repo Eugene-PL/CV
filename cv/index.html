@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+<!-------------------- Preloader --------------------->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+<!--------------------   Header  --------------------->
+    <header class="header" align=center>
+      <img src="./avatar.png" alt="avatar" height=100% width=100% class="header__avatar"/>
+      <h1 class="header__title" id="title"></h1>
+      <h2 class="header__subtitle" id="subtitle"></h2>
+    </header>
+    <main>
+<!-----------------   Div Container   ---------------->
+           <!-- Новый блок "Обо мне" -->
+      <div class="about-me">
+        <h3 class="about-me__header">Обо мне:</h3>
+          <div class="about-me__container">
+             <p class="about-me__description">
+         Я — Junior QA engineer с опытом в функциональном и нефункциональном тестировании программного обеспечения. Специализируюсь на тестировании десктопных приложений и веб-сайтов, включая проверку UI/UX и API. Стремлюсь обеспечивать высокое качество продуктов, выявляя и помогая исправлять ошибки на ранних этапах разработки. Открыт к новым знаниям и готов развиваться в сфере тестирования для достижения лучших результатов.
+          </div>
+        </p>
+      </div>
+                 <!-- Новый блок "Мой стек" -->
+      <div class="stack">
+        <h4 class="stack__header">Мой стек:</h4>
+          <div class="stack__container">
+
+        <ul class="stack__subcontainer">
+          <li class="stack__link">
+            <p class="stack__name">Developer Tools</p>
+            <p class="stack__title">- тестирование front-части web-приложений</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">
+          <li class="stack__link">
+            <p class="stack__name">Postman</p>
+            <p class="stack__title">- тестирование API и написания автотестов</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">       
+          <li class="stack__link">
+            <p class="stack__name">Swagger</p>
+            <p class="stack__title">- тестирование API и документации по API</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">MySQL</p>
+            <p class="stack__title">- просмотр данных в БД и написание SQL-запросов</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">REST-API, SOAP</p>
+            <p class="stack__title">- использование в процессе тестирования обмена данными</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">Яндекс-трекер, Jira</p>
+            <p class="stack__title">- организация ежедневной работы и написание багрепортов</p>
+          </li>
+        </ul>
+
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">Charles</p>
+            <p class="stack__title">- тестирование front-end / back-end</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">Kibana</p>
+            <p class="stack__title">- просмотр логов приложений</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">HTML, CSS</p>
+            <p class="stack__title">- тестирование front-end</p>
+          </li>
+        </ul>
+
+        <ul class="stack__subcontainer">    
+          <li class="stack__link">
+            <p class="stack__name">Figma</p>
+            <p class="stack__title">- тестирование user-interface front-end</p>
+          </li>
+        </ul>
+          </div>
+      </div>
+
+       <!-- Новый блок "Мои контакты" -->
+      <div class="links">
+        <h5 class="links__header">Мои контакты:</h5>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Telegram:</p>
+            <a class="links__link" href="http://t.me/Eugene_Ps">@Eugene_Ps</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Email:</p>
+            <a class="links__link" href="mailto:evgenplshk@gmail.com"
+              >evgenplshk@gmail.com</a
+            >
+          <li class="links__link">
+            <p class="links__title">Гит:</p>
+            <a class="links__link" href="http://github.com/Eugene-PL/">github.com/Eugene-PL</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+<!--------------------   Footer  --------------------->
+    <footer>
+      <section class="resume">
+        <button class="download-button" onclick="showMessage()">Скачать моё резюме</button>
+          <p id="message" style="display: none; color: #FFD700;">Извините, оно ещё не готово(
+          </p> <!-- Сообщение, изначально скрыто -->
+      </section>
+    </footer>
+
+    <script type="text/javascript" src="js.js"></script>
+    <script>
+    window.onbeforeunload = function() {
+        window.scrollTo(0, 0); // Прокручиваем страницу в верхнюю часть
+      };
+    </script>
+  </body>
+</html>
